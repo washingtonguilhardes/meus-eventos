@@ -1,0 +1,100 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="WebApp de exemplo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/icon.png">
+    <meta name="theme-color" content="#40527E">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Shopping">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/icon.png">
+    <meta name="msapplication-TileColor" content="#40527E">
+
+    <link href="css/micons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<nav class="app-bar">
+    <span><a href="#" data-activates="slide-out" class="app-menu-handler"><i class="material-icons">menu</i></a></span>
+</nav>
+<ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+        <div class="background">
+            <img src="images/balada.jpg">
+        </div>
+        <a href="#!user"><img class="circle" src="images/user.png"></a>
+        <a href="#!name"><span class="white-text name">John Doe</span></a>
+        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="inicio.html">Inicio</a></li>
+    <li><a href="meus-eventos.html">Meus eventos</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="proximos-eventos.html">Próximos Eventos</a></li>
+</ul>
+
+<div class="app-container ">
+    <main class="evento-1">
+        <div class="parallax-container" style="max-height: 240px">
+            <div class="parallax"><img src="images/lollapalooza.png"></div>
+        </div>
+        <div class="description">
+            <div class="col s12 m7">
+                <h2 class="header">Lollapalooza</h2>
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <div id="map-container" class="maps-container"></div>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>
+                                Data: 29 de Março de 2018
+                            </p>
+                            <p>
+                                Apresentações: PEARL JAM, RED HOT CHILI PEPPERS, THE KILLERS
+                            </p>
+                            <p id="maps-description"></p>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn">
+                                <i class="material-icons ">check</i>
+                                <span>Eu vou</span>
+                            </a>
+                            <a class="waves-effect waves-light btn">
+                                <i class="material-icons ">check</i>
+                                <span>Eu vou</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/app_handler.js"></script>
+<script src="js/app_menu.js"></script>
+<script src="js/spa.js"></script>
+<script src="js/geolocation.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIXncdr1CmFTQ2I9nxTOJbPuD_UNIz17Q&callback=draw">
+</script>
+</body>
+</html>

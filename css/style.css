@@ -1,0 +1,26 @@
+.primary-color{
+    color: #40527E
+}
+.description{
+    padding: 0 16px;
+}
+.app-bar{
+    padding: 0 16px;
+    position: fixed;
+    max-height: 56px;
+    height: 56px;
+    z-index: 2;
+    background-color: #40527E;
+}
+.app-container{
+    padding-top: 56px;
+}
+.card .card-image img{
+    max-height: 300px
+}
+
+
+.maps-container{
+    width: 200px;
+    height: 200px;
+}
